@@ -1,0 +1,17 @@
+{
+  "name": "cs_programming_unit-test-boilerplate",
+  "version": "1.0.0",
+  "description": "A lightweight boilerplate project for unit tests",
+  "license": "UNLICENSED",
+  "author": "Marco Lilli",
+  "type": "module",
+  "main": "cart.js",
+  "scripts": {
+    "test": "node --import=tsx --watch=*.ts --test *.test.ts",
+    "start": "tsx main.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.6",
+    "tsx": "^4.19.2"
+  }
+}
