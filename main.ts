@@ -23,17 +23,14 @@ export class TreeNode {
     if (searchString === ''){
       return [];
     }
+
     let result: TreeNode[] = [];
+
     if (this.value.includes(searchString)) {
       result.push(this);
     }
-    for (const child of this.children) {
-      result.push(...child.search(searchString));
-      // const found = child.search(searchString);
-      // found.forEach(element => {
-      //   result.push(element);
-      // });
-    }
+    this.children.forEach(child => {result.push(...child.search(searchString))});
+    
     return result;
   }
 }
