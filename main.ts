@@ -39,8 +39,8 @@ export class TreeNode {
 }
 
 // const root = new TreeNode("CEO");
-// const cto = root.addChild("CTO");
-// const cfo = root.addChild("CFO");
+  // const cto = root.addChild("CTO");
+  // const cfo = root.addChild("CFO");
 // cto.addChild("Developer");
 // cto.addChild("Designer");
 // cfo.addChild("Accountant");
