@@ -3,6 +3,10 @@ import assert from 'assert'
 import {TreeNode} from './main'
 
 describe('TreeNode', ()=>{
+    it('initializes with correct value', () => {
+        const root = new TreeNode('CEO');
+        assert.strictEqual(root.value, 'CEO');
+    })
     describe('addChild', ()=>{
         it('creates and returns new node', ()=>{
             const root = new TreeNode('CEO');
